@@ -3,3 +3,11 @@
   service:
     name: newrelic-daemon
     state: restarted
+- name: Restart php-fpm
+  service:
+    name: php7.1-fpm.service 
+    state: restarted
+- name: Restart nginx 
+  service:
+    name: nginx 
+    state: restarted

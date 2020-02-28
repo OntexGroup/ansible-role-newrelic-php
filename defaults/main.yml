@@ -154,7 +154,8 @@ newrelic_agent_daemon_loglevel: info
 #          value in the range 1-65534, then this will instruct the agent to
 #          use a normal TCP socket on the port specified. This may be easier
 #          to use if you are using a chroot environment.
-newrelic_agent_daemon_port: "/tmp/.newrelic.sock"
+#newrelic_agent_daemon_port: "/tmp/.newrelic.sock"
+newrelic_agent_daemon_port: "@newrelic-daemon"
 
 
 # Setting: newrelic.daemon.ssl

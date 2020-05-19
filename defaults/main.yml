@@ -239,7 +239,7 @@ newrelic_agent_daemon_location: "/usr/bin/newrelic-daemon"
 #          change this from the default except in certain very special
 #          circumstances, and then only on instruction from a New Relic sales
 #          person or support staff member.
-newrelic_agent_daemon_collector_host: "collector.newrelic.com"
+newrelic_agent_daemon_collector_host: "collector.eu01.nr-data.net"
 
 # Setting: newrelic.daemon.dont_launch
 # Type   : integer (0, 1, 2 or 3)

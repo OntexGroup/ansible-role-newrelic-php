@@ -1,4 +1,7 @@
 ---
+# newrelic php version to use
+newrelic_php_version: "7.4"
+
 #
 # New Relic Repo URL used on RHEL / Centos
 #
@@ -601,5 +604,4 @@ newrelic_agent_labels: false
 #          https://docs.newrelic.com/docs/synthetics/new-relic-synthetics/getting-started/new-relic-synthetics
 #
 newrelic_agent_synthetics_enabled: true
-
 

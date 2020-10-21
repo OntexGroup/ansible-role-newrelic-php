@@ -28,7 +28,7 @@
 - name: Configure New Relic Agent
   template:
     src: newrelic.ini.j2
-    dest: /etc/php/{{ php_version }}/mods-available/newrelic.ini
+    dest: /etc/php/{{ newrelic_php_version }}/mods-available/newrelic.ini
     group: root 
     owner: root
     mode: 0644
@@ -44,8 +44,8 @@
     path: "{{ item }}"
     state: absent
   with_items:
-    - /etc/php/{{ php_version }}/fpm/conf.d/newrelic.ini
-    - /etc/php/{{ php_version }}/cli/conf.d/newrelic.ini
+    - /etc/php/{{ newrelic_php_version }}/fpm/conf.d/newrelic.ini
+    - /etc/php/{{ newrelic_php_version }}/cli/conf.d/newrelic.ini
   changed_when: False
         
 - name: Ensure New Relic Agent is started and enabled

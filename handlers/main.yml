@@ -5,7 +5,7 @@
     state: restarted
 - name: Restart php-fpm
   service:
-    name: php7.2-fpm.service 
+    name: php{{ newrelic_php_version }}-fpm.service 
     state: restarted
 - name: Restart nginx 
   service:
